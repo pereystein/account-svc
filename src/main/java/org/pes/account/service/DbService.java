@@ -22,6 +22,7 @@ public class DbService {
     }
 
     public void createAccount(Account account) {
+        this.vault.put(account.getAccountNumber(), 0);
     }
 
     public void updateAccount(String account, Integer change) {

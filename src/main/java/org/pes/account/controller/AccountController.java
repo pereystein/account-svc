@@ -20,7 +20,7 @@ public class AccountController {
         return accountService.getBalance(accountNumber);
     }
 
-    @PostMapping("/create")
+    @PostMapping("/create-account")
     public String createAccount(
             @RequestBody Account account
     ) throws Exception {

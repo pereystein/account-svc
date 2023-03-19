@@ -37,7 +37,7 @@ public class AccountService {
         Integer amountInCents = -amountInCents(amount);
         dbService.updateAccount(account, amountInCents);
     }
-    private Integer amountInCents(Amount amount) {
+    protected static Integer amountInCents(Amount amount) {
         Integer amountInCents = amount.getCent();
         amountInCents += amount.getUnit() * 100;
 
